@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coolfire.application.blogit.PostActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/add_btn"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_below="@+id/imageSelect">
+
+        <EditText
+            android:id="@+id/Post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/input_outline"
+            android:hint="@string/PostTitle"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:inputType="textShortMessage"
+            android:selectAllOnFocus="true"/>
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Post_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/input_outline"
+            android:hint="@string/Description"
+            android:inputType="textMultiLine"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/Postbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:inputType="textShortMessage"
+            android:paddingBottom="0dp"
+            android:text="@string/Button_post"
+            android:textColor="#ffffff"
+            android:textColorLink="#fafafa"/>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

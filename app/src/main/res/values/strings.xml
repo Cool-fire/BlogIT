@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BlogIT</string>
+    <string name="PostTitle">Post Title....</string>
+    <string name="Description">Description...</string>
+    <string name="Button_post">Submit Post</string>
+    <string name="title_activity_display">displayActivity</string>
+</resources>
